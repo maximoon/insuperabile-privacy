@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Insuperabile</title>
+    <style>
+        :root {
+            --verde: #5A7A55;
+            --verde-chiaro: #8FAF8A;
+            --ambra: #B87333;
+            --testo: #1A231A;
+            --sfondo: #F5FAF4;
+            --bordo: #D4E6D0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: var(--sfondo);
+            color: var(--testo);
+            line-height: 1.8;
+            padding: 0 1rem;
+        }
+        header {
+            background: var(--verde);
+            color: white;
+            padding: 2.5rem 2rem 2rem;
+            margin: 0 -1rem 2.5rem;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 0.02em;
+        }
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-top: 0.4rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-bottom: 4rem;
+        }
+        h2 {
+            font-size: 1.15rem;
+            color: var(--verde);
+            margin: 2rem 0 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--bordo);
+            font-weight: bold;
+            letter-spacing: 0.01em;
+        }
+        p { margin-bottom: 1rem; font-size: 0.97rem; }
+        ul {
+            margin: 0.5rem 0 1rem 1.5rem;
+            font-size: 0.97rem;
+        }
+        ul li { margin-bottom: 0.4rem; }
+        .badge {
+            display: inline-block;
+            background: var(--verde-chiaro);
+            color: white;
+            font-size: 0.75rem;
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            margin-left: 0.4rem;
+            vertical-align: middle;
+            font-family: sans-serif;
+        }
+        .highlight {
+            background: #EEF6EC;
+            border-left: 3px solid var(--verde);
+            padding: 1rem 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.95rem;
+        }
+        .update-date {
+            font-size: 0.85rem;
+            color: #6B756A;
+            margin-top: 0.3rem;
+            font-family: sans-serif;
+        }
+        footer {
+            border-top: 1px solid var(--bordo);
+            padding-top: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #6B756A;
+            font-family: sans-serif;
+        }
+        a { color: var(--verde); }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>Insuperabile — App per la localizzazione di stalli riservati ai disabili</p>
+    </div>
+</header>
+
+<div class="container">
+
+    <p class="update-date">Ultimo aggiornamento: 5 giugno 2026</p>
+
+    <div class="highlight">
+        Insuperabile è sviluppata da <strong>Massimino Bellavita</strong> (sviluppatore indipendente). La tua privacy è importante: questa app raccoglie solo i dati strettamente necessari al suo funzionamento e non vende né condivide dati personali con terze parti a fini commerciali.
+    </div>
+
+    <h2>1. Dati raccolti e finalità</h2>
+
+    <p><strong>Posizione geografica (GPS)</strong> <span class="badge">necessario</span></p>
+    <p>L'app accede alla tua posizione per mostrarti gli stalli riservati nelle vicinanze, calcolare la distanza dallo stallo più vicino e permetterti di salvare la posizione del tuo veicolo. La posizione non viene mai trasmessa a server esterni. Viene elaborata esclusivamente sul tuo dispositivo e, per la funzione "Salva auto", salvata localmente nelle preferenze dell'app.</p>
+
+    <p><strong>Fotocamera</strong> <span class="badge">solo premium</span></p>
+    <p>La funzione di segnalazione infrazione (disponibile con il piano Premium) richiede l'accesso alla fotocamera per scattare foto del veicolo in sosta irregolare. Le foto vengono allegate direttamente all'email di segnalazione e non vengono mai caricate su server dell'app né archiviate al di fuori del tuo dispositivo.</p>
+
+    <p><strong>Autenticazione anonima Firebase</strong> <span class="badge">automatico</span></p>
+    <p>L'app utilizza Firebase Authentication in modalità anonima per identificare le sessioni utente in modo sicuro senza richiedere registrazione. Non viene associato nessun dato personale (nome, email, telefono) all'identificatore anonimo.</p>
+
+    <p><strong>Segnalazioni infrazione</strong> <span class="badge">solo premium</span></p>
+    <p>Quando invii una segnalazione, vengono salvati su Firebase Firestore i seguenti metadati: coordinate geografiche dello stallo, comune, data e ora della segnalazione. Le foto non vengono mai caricate su cloud — vengono inviate esclusivamente via email al client email del tuo dispositivo, sotto il tuo diretto controllo.</p>
+
+    <p><strong>Stalli aggiuntivi dalla community</strong></p>
+    <p>Se utilizzi la funzione per aggiungere un nuovo stallo, vengono salvati su Firebase Firestore: coordinate geografiche, indirizzo, numero stalli indicati, identificatore anonimo della sessione e data di inserimento. Non sono salvati dati che consentano di risalire alla tua identità.</p>
+
+    <h2>2. Dati NON raccolti</h2>
+    <ul>
+        <li>Non raccogliamo nome, cognome, email o numero di telefono</li>
+        <li>Non tracciamo la cronologia degli spostamenti</li>
+        <li>Non utilizziamo cookie o tecnologie di tracciamento per pubblicità</li>
+        <li>Non vendiamo né cediamo dati a terze parti</li>
+        <li>Non utilizziamo analytics comportamentali</li>
+    </ul>
+
+    <h2>3. Servizi di terze parti</h2>
+    <p>L'app si integra con i seguenti servizi esterni:</p>
+    <ul>
+        <li><strong>Google Maps SDK</strong> — per la visualizzazione della mappa e la navigazione. Si applica la <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy di Google</a>.</li>
+        <li><strong>Firebase (Google)</strong> — per autenticazione anonima e database stalli community. Si applica la <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy di Firebase</a>.</li>
+        <li><strong>OpenStreetMap / Overpass API</strong> — per il recupero dei dati sugli stalli. Le query contengono solo le coordinate del bounding box della mappa visualizzata, senza dati personali.</li>
+        <li><strong>Google Play Billing</strong> — per la gestione degli acquisti in-app (piano Premium). Si applica la Privacy Policy di Google Play.</li>
+        <li><strong>Nominatim (OpenStreetMap)</strong> — per la geocodifica inversa necessaria a trovare l'email della Polizia Municipale locale al momento della segnalazione. La richiesta contiene solo le coordinate geografiche.</li>
+    </ul>
+
+    <h2>4. Acquisti in-app</h2>
+    <p>Il piano Premium (acquisto una tantum) viene gestito esclusivamente tramite Google Play Billing. Insuperabile non ha accesso ai dati della tua carta di credito né alle informazioni di pagamento. Lo stato di acquisto viene salvato localmente sul dispositivo.</p>
+
+    <h2>5. Conservazione dei dati</h2>
+    <p>I dati salvati localmente (posizione auto, preferenze, stato premium) restano sul tuo dispositivo e vengono eliminati automaticamente alla disinstallazione dell'app. I dati su Firebase Firestore (stalli aggiunti dalla community, metadati segnalazioni) vengono conservati per garantire il funzionamento del servizio e possono essere eliminati su richiesta.</p>
+
+    <h2>6. Diritti dell'utente</h2>
+    <p>In conformità al Regolamento Europeo GDPR (UE) 2016/679, hai il diritto di:</p>
+    <ul>
+        <li>Accedere ai dati che ti riguardano</li>
+        <li>Richiedere la rettifica o la cancellazione dei dati</li>
+        <li>Opporti al trattamento</li>
+        <li>Richiedere la portabilità dei dati</li>
+    </ul>
+    <p>Per esercitare questi diritti o per qualsiasi domanda sulla privacy, contatta: <a href="mailto:maxcipollino@protonmail.com">maxcipollino@protonmail.com</a></p>
+
+    <h2>7. Minori</h2>
+    <p>L'app non è rivolta a minori di 13 anni e non raccoglie consapevolmente dati di minori.</p>
+
+    <h2>8. Modifiche alla privacy policy</h2>
+    <p>Eventuali modifiche a questa policy verranno comunicate tramite aggiornamento dell'app su Google Play. La data di "Ultimo aggiornamento" in cima alla pagina riflette sempre la versione più recente.</p>
+
+    <h2>9. Contatti</h2>
+    <p>
+        Sviluppatore: <strong>Massimino Bellavita</strong><br>
+        Email: <a href="mailto:maxcipollino@protonmail.com">maxcipollino@protonmail.com</a><br>
+        Telegram: <a href="https://t.me/maximoon">@maximoon</a>
+    </p>
+
+    <footer>
+        <p>Insuperabile · Privacy Policy · versione 1.0 · 5 giugno 2026</p>
+        <p style="margin-top:0.4rem">Questa policy è conforme al GDPR (UE) 2016/679 e al D.Lgs. 196/2003 (Codice Privacy italiano).</p>
+    </footer>
+
+</div>
+</body>
+</html>
