@@ -124,7 +124,7 @@
     <p>Quando invii una segnalazione, vengono salvati su Firebase Firestore i seguenti metadati: coordinate geografiche dello stallo, comune, data e ora della segnalazione. Le foto non vengono mai caricate su cloud — vengono inviate esclusivamente via email al client email del tuo dispositivo, sotto il tuo diretto controllo.</p>
 
     <p><strong>Stalli aggiuntivi dalla community</strong></p>
-    <p>Se utilizzi la funzione per aggiungere un nuovo stallo, vengono salvati su Firebase Firestore: coordinate geografiche, indirizzo, numero stalli indicati, identificatore anonimo della sessione e data di inserimento. Non sono salvati dati che consentano di risalire alla tua identità.</p>
+    <p>Se utilizzi la funzione "Aggiungi stalli mancanti", l'app ti reindirizza a OpenStreetMap (tramite l'app StreetComplete o il sito ufficiale OpenStreetMap.org), dove puoi contribuire direttamente alla mappa aperta e collaborativa. Questo passaggio avviene interamente al di fuori dell'app Insuperabile: nessun dato relativo alla tua segnalazione viene salvato sui nostri server o su Firebase Firestore.</p>
 
     <h2>2. Dati NON raccolti</h2>
     <ul>
@@ -139,7 +139,7 @@
     <p>L'app si integra con i seguenti servizi esterni:</p>
     <ul>
         <li><strong>Google Maps SDK</strong> — per la visualizzazione della mappa e la navigazione. Si applica la <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy di Google</a>.</li>
-        <li><strong>Firebase (Google)</strong> — per autenticazione anonima e database stalli community. Si applica la <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy di Firebase</a>.</li>
+        <li><strong>Firebase (Google)</strong> — per autenticazione anonima e per la memorizzazione dei metadati delle segnalazioni di infrazione (funzione Premium). Si applica la <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy di Firebase</a>.</li>
         <li><strong>OpenStreetMap / Overpass API</strong> — per il recupero dei dati sugli stalli. Le query contengono solo le coordinate del bounding box della mappa visualizzata, senza dati personali.</li>
         <li><strong>Google Play Billing</strong> — per la gestione degli acquisti in-app (piano Premium). Si applica la Privacy Policy di Google Play.</li>
         <li><strong>Nominatim (OpenStreetMap)</strong> — per la geocodifica inversa necessaria a trovare l'email della Polizia Municipale locale al momento della segnalazione. La richiesta contiene solo le coordinate geografiche.</li>
