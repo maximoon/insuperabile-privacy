@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insuperabile – Stalli Disabili · Guida completa</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px; line-height: 1.7; color: #222;
+    background: #fff; max-width: 720px; margin: 0 auto; padding: 2rem 1.2rem 4rem;
+  }
+  h1 { font-size: 1.8rem; font-weight: 600; color: #2C5F2E; margin-bottom: .2rem; }
+  h2 { font-size: 1.2rem; font-weight: 600; color: #2C5F2E; margin: 2rem 0 .6rem; }
+  h3 { font-size: 1rem; font-weight: 600; color: #444; margin: 1.4rem 0 .4rem; }
+  p { margin-bottom: .9rem; }
+  a { color: #2C5F2E; text-decoration: underline; }
+  a:hover { color: #E8A020; }
+  hr { border: none; border-top: 1px solid #e0e0e0; margin: 1.8rem 0; }
+  strong { font-weight: 600; }
+  em { font-style: italic; }
+  blockquote {
+    border-left: 3px solid #E8A020; background: #FFF8E7;
+    padding: .7rem 1rem; margin: 1rem 0; border-radius: 0 6px 6px 0;
+    font-size: .93rem; color: #555;
+  }
+  .subtitle { font-size: 1rem; color: #555; margin-bottom: .2rem; }
+  .byline { font-size: .9rem; color: #888; font-style: italic; margin-bottom: 1.4rem; }
+  .cta-button {
+    display: inline-block; background: #2C5F2E; color: #fff !important;
+    text-decoration: none; padding: .6rem 1.2rem; border-radius: 6px;
+    font-size: .95rem; font-weight: 500; margin: .6rem 0;
+  }
+  .cta-button:hover { background: #1e4520; color: #fff !important; }
+  .legal-note {
+    font-size: .78rem; color: #888; font-style: italic;
+    margin: .6rem 0 1.4rem; line-height: 1.5;
+  }
+  .premium-box {
+    background: #f8f8f8; border: 1px solid #ddd; border-left: 4px solid #E8A020;
+    border-radius: 0 8px 8px 0; padding: 1rem 1.2rem; margin: 1rem 0;
+  }
+  .premium-box .badge {
+    font-size: .78rem; font-weight: 700; color: #E8A020;
+    text-transform: uppercase; letter-spacing: .06em; margin-bottom: .5rem;
+  }
+  .bullet { margin-bottom: .5rem; padding-left: 1.2rem; }
+  .bullet::before { content: "➤ "; color: #2C5F2E; margin-left: -1.2rem; }
+  .marker-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin: .8rem 0 1rem; }
+  .marker-card { padding: .8rem; border-radius: 8px; font-size: .9rem; }
+  .marker-verde { background: #E8F5E9; border: 1px solid #A5D6A7; }
+  .marker-verde strong { color: #2C5F2E; }
+  .marker-ambra { background: #FFF8E1; border: 1px solid #FFE082; }
+  .marker-ambra strong { color: #B8860B; }
+  .city-list { color: #555; font-size: .95rem; line-height: 1.9; }
+  .faq-item { margin-bottom: 1.1rem; }
+  .faq-q { font-weight: 600; margin-bottom: .2rem; }
+  .faq-a { color: #444; font-size: .95rem; }
+  .btn-section { background: #f5f5f5; border-radius: 8px; padding: 1rem 1.2rem; margin: .8rem 0; }
+  .btn-section h3 { margin-top: 0; color: #2C5F2E; font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+  .btn-item { margin-bottom: .6rem; font-size: .95rem; }
+  .btn-item .btn-name { font-weight: 600; }
+  .btn-item .btn-pos { font-size: .82rem; color: #888; font-style: italic; }
+  .contact-item { margin-bottom: .6rem; font-size: .95rem; }
+  .contact-item strong { display: inline-block; min-width: 220px; }
+  .footer { text-align: center; color: #999; font-size: .85rem; font-style: italic; margin-top: 2.5rem; }
+  /* IMAGE PLACEHOLDER — rimuovere dopo aver aggiunto le foto */
+  .img-placeholder {
+    background: #f0f4f0; border: 2px dashed #a5c8a5;
+    border-radius: 8px; padding: 1.5rem; text-align: center;
+    color: #6a9a6a; font-size: .85rem; margin: 1rem 0;
+  }
+  @media (max-width: 500px) {
+    body { padding: 1.2rem .8rem 3rem; }
+    h1 { font-size: 1.4rem; }
+    .marker-grid { grid-template-columns: 1fr; }
+    .contact-item strong { display: block; min-width: unset; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Insuperabile – Stalli Disabili</h1>
+<p class="subtitle">La guida completa</p>
+<p class="byline">Massimino Bellavita, sviluppatore indipendente</p>
+<hr>
+
+<p>In Italia non esisteva nessuna app dedicata a mappare gli stalli di parcheggio riservati ai titolari di contrassegno CUDE. Nessuna mappa aggiornata, nessun riferimento unico, nessuno strumento pratico. Ho scritto, risposto e discusso con oltre 250 Comuni italiani su 7.904, chiedendo i dati ufficiali, ho aspettato mesi, ho convertito formati improbabili — e ho costruito Insuperabile.</p>
+
+<p>È un'app Android gratuita. Questo documento spiega come funziona, cosa può e cosa non può fare, e dove sta andando.</p>
+
+<a class="cta-button" href="https://play.google.com/store/apps/details?id=com.maximoon.insuperabile">📲 Scarica su Google Play</a>
+
+<p class="legal-note">Il dataset di Insuperabile costituisce una banca dati tutelata ai sensi degli artt. 102-bis e ss. della Legge 633/1941. Sono vietati l'estrazione e il reimpiego, anche parziali, non autorizzati dal costitutore. Ogni versione del dataset è tracciata cronologicamente e la sua paternità è documentabile in ogni momento; l'uso non autorizzato è perseguibile ai sensi di legge.</p>
+
+<hr>
+
+<!-- IMMAGINE HERO -->
+<img src="strip.jpg" alt="Insuperabile – panoramica app stalli disabili" style="width:100%;border-radius:8px;margin:1rem 0">
+
+<hr>
+
+<h2>Cosa fa l'app</h2>
+<p>Le funzioni gratuite coprono l'uso quotidiano completo:</p>
+
+<p class="bullet"><strong>Mappa interattiva</strong> — gli stalli riservati appaiono sulla mappa nella tua zona o nella zona che stai consultando</p>
+<p class="bullet"><strong>Stallo più vicino</strong> — un tap sul pulsante verde trova automaticamente lo stallo riservato più prossimo alla tua posizione e lo centra sulla mappa</p>
+<p class="bullet"><strong>Navigazione integrata</strong> — seleziona uno stallo e avvia Google Maps con il percorso verso di esso</p>
+<p class="bullet"><strong>Cerca parcheggio pubblico</strong> — se gli stalli riservati nelle vicinanze sono tutti occupati, il pulsante arancione mostra i parcheggi pubblici disponibili nell'area</p>
+<p class="bullet"><strong>Salva posizione auto</strong> — dopo aver parcheggiato, salva il punto esatto per ritrovare l'auto facilmente in seguito</p>
+<p class="bullet"><strong>Aggiungi uno stallo mancante</strong> — se noti uno stallo non presente sulla mappa, il pulsante <strong>!</strong> apre StreetComplete, l'app collaborativa di OpenStreetMap. Gli stalli aggiunti lì entrano automaticamente in Insuperabile al successivo aggiornamento</p>
+
+<div class="premium-box">
+  <div class="badge">Funzioni Premium — €2,99 una tantum</div>
+  <p>Un singolo acquisto senza abbonamento sblocca tutte le funzioni avanzate, presenti e future:</p>
+  <p class="bullet"><strong>Segnalazione infrazione</strong> — se trovi uno stallo occupato abusivamente, scatta una foto dall'app, aggiungi opzionalmente la targa e una nota: la segnalazione viene inviata automaticamente via email alla Polizia Municipale del Comune in cui ti trovi nel momento esatto della segnalazione — non alla tua PM di residenza. Nessun modulo da compilare, nessun numero da cercare</p>
+  <p class="bullet"><strong>Ricerca per indirizzo</strong> <em>(disponibile a breve)</em> — cerca stalli vicino a un indirizzo specifico, non solo vicino a dove sei</p>
+  <p class="bullet"><strong>Avvisi ZTL</strong> <em>(in sviluppo)</em> — segnalazione delle Zone a Traffico Limitato nelle città coperte, integrata nella mappa degli stalli</p>
+</div>
+
+<hr>
+
+<h2>Come funziona, in tre passi</h2>
+
+<p><strong>1. Apri l'app</strong> e autorizza la geolocalizzazione — serve solo per centrare la mappa sulla tua posizione, nessun dato viene trasmesso a terzi</p>
+<p><strong>2. Naviga sulla mappa</strong> — quando sei sufficientemente zoomato da vedere le strade distintamente, l'app carica automaticamente gli stalli nell'area visualizzata. I marker appaiono sulla mappa in pochi secondi</p>
+<p><strong>3. Tocca uno stallo per avviare Google Maps</strong> con il percorso verso di esso</p>
+
+<!-- IMMAGINE OPZIONALE: <img src="images/screenshot_dettaglio.jpg" alt="Dettaglio stallo" style="width:100%;border-radius:8px;margin:1rem 0"> -->
+
+<blockquote>Niente registrazione. Niente account. Niente dati personali raccolti durante l'uso base.</blockquote>
+
+<hr>
+
+<h2>I dati: da dove vengono e come leggerli</h2>
+<p>I dati degli stalli hanno due origini, riconoscibili a colpo d'occhio dal colore del marker:</p>
+
+<div class="marker-grid">
+  <div class="marker-card marker-verde"><strong>Marker verde</strong><br>Dato verificato da un dataset comunale ufficiale. Il Comune ha fornito direttamente la posizione tramite accesso civico. Massima affidabilità.</div>
+  <div class="marker-card marker-ambra"><strong>Marker ambra</strong><br>Dato proveniente da OpenStreetMap, la mappa collaborativa mondiale. Affidabile nella pratica, non verificato formalmente da fonte istituzionale.</div>
+</div>
+
+<p>Entrambi i tipi di marker sono utili e accurati nella pratica. La distinzione ti aiuta a valutare il grado di certezza.</p>
+
+<hr>
+
+<h2>Città coperte</h2>
+<p>I dati ufficiali comunali coprono oggi <strong>19 città</strong> per un totale di <strong>oltre 23.500 stalli verificati</strong>:</p>
+<p class="city-list">Bergamo · Bologna · Cagliari · Cesena · Chieri · Firenze · Genova · Lecce · Livorno · Milano · Modena · Pavia · Pisa · Prato · Reggio Emilia · Siena · Torino · Trento · Verona</p>
+<p><em>Stiamo continuando a richiedere dati ai Comuni. Ogni nuova città con dataset ufficiale viene aggiunta agli aggiornamenti periodici.</em></p>
+
+<hr>
+
+<h2>Cosa l'app non fa</h2>
+<p>Dirlo chiaramente vale più di qualsiasi descrizione delle funzioni:</p>
+<p class="bullet"><strong>Non mostra se lo stallo è libero in tempo reale</strong> — la mappa indica dove si trovano gli stalli, non se sono occupati. Non esiste una fonte dati pubblica per questo in Italia</p>
+<p class="bullet"><strong>Non copre tutte le città italiane</strong> con dati ufficiali — la copertura dipende dalla disponibilità dei Comuni a condividere i dati</p>
+<p class="bullet"><strong>Non sostituisce Google Maps</strong> — la navigazione stradale è delegata a Google Maps; Insuperabile si occupa solo di trovare lo stallo</p>
+<p class="bullet"><strong>Non garantisce che lo stallo esista ancora</strong> — i dataset comunali non si aggiornano in tempo reale</p>
+
+<hr>
+
+<h2>Domande frequenti</h2>
+
+<div class="faq-item">
+  <p class="faq-q">Perché vedo stalli in una città non nella lista delle 19?</p>
+  <p class="faq-a">Le 19 città hanno dati ufficiali comunali. Per tutte le altre, l'app mostra comunque gli stalli presenti su OpenStreetMap. La differenza è nella fonte e nel livello di verifica, non nella presenza degli stalli.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-q">Cosa significa il marker ambra?</p>
+  <p class="faq-a">Dato OpenStreetMap — affidabile nella pratica ma non verificato ufficialmente da un Comune. Se lo trovi errato, il pulsante <strong>!</strong> ti permette di segnalarlo e correggerlo.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-q">L'app funziona senza internet?</p>
+  <p class="faq-a">Per le 19 città del bundle sì — i dati sono inclusi nell'app e non richiedono connessione. Per le altre città serve la connessione.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-q">Come aggiungo uno stallo mancante?</p>
+  <p class="faq-a">Tocca il pulsante <strong>!</strong> sulla mappa, seleziona "Aggiungi stallo mancante": si apre StreetComplete, l'app più semplice per contribuire a OpenStreetMap. Lo stallo che aggiungi lì compare in Insuperabile all'aggiornamento successivo.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-q">La ricerca per indirizzo è precisa? (Premium)</p>
+  <p class="faq-a">Generalmente buona, ma può variare di 50-80 metri se l'edificio non è mappato singolarmente in OpenStreetMap. Sufficiente per centrare la mappa nella zona giusta.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-q">La funzione premium è un abbonamento?</p>
+  <p class="faq-a">No. È un acquisto una tantum di €2,99 che sblocca tutte le funzioni avanzate in modo permanente, incluse quelle future.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-q">Come funziona la segnalazione infrazione? (Premium)</p>
+  <p class="faq-a">Tocca lo stallo occupato abusivamente, premi "Segnala infrazione": scatta una foto, aggiungi opzionalmente targa e note. L'app rileva automaticamente il Comune in cui ti trovi e invia la segnalazione alla Polizia Municipale competente — non alla tua PM di residenza.</p>
+</div>
+
+<hr>
+
+<h2>Cosa arriverà</h2>
+<p class="bullet"><strong>Parcheggi preferiti</strong> — salva localmente gli stalli che usi più spesso per trovarli senza cercare ogni volta. Funzione gratuita, in sviluppo</p>
+
+<hr>
+
+<h2>Perché esiste e chi la fa</h2>
+<p>Ho sviluppato Insuperabile da solo, senza aziende, senza investitori, senza pubblicità. È un progetto nato da una necessità concreta — e costruito con la stessa concretezza.</p>
+<p>Il modello è semplice: app gratuita per l'uso base, una funzione premium una tantum senza abbonamento, donazioni libere per chi vuole sostenere lo sviluppo.</p>
+<blockquote>☕ <a href="https://paypal.me/massimodesilvi">Offrimi un caffè</a> — se l'app ti è utile e vuoi sostenere il progetto</blockquote>
+
+<hr>
+
+<h2>Privacy</h2>
+<p>L'app non raccoglie dati personali durante l'uso base. La geolocalizzazione viene usata solo dal tuo telefono per centrare la mappa — non viene mai trasmessa ai server dell'app.</p>
+<p>Fa eccezione la funzione premium di <strong>segnalazione infrazione</strong>: quando la usi volontariamente, la foto e la posizione dello stallo vengono trasmesse alla Polizia Municipale — è lo scopo stesso della funzione.</p>
+<p>Le uniche informazioni tracciate in modo anonimo sono i conteggi di Firebase Analytics: quanti utenti aprono l'app e da quali città. Nessun dato personale, nessuna profilazione.</p>
+<p>Nessuna pubblicità. Nessuna vendita di dati.</p>
+<p><a href="https://maximoon.github.io/insuperabile-privacy/privacy_policy_insuperabile.html">Privacy Policy completa</a></p>
+
+<hr>
+
+<h2>Guida ai pulsanti</h2>
+
+<img src="schermate.jpg" alt="Insuperabile – schermate app pulsanti e funzioni" style="width:100%;border-radius:8px;margin:.5rem 0 1.2rem">
+
+<div class="btn-section">
+  <h3>Pulsanti sulla mappa principale</h3>
+  <div class="btn-item"><span class="btn-name">🎯 Mirino</span> <span class="btn-pos">(in alto a destra, verde scuro)</span> — ricentra la mappa sulla tua posizione attuale.</div>
+  <div class="btn-item"><span class="btn-name">ℹ️ Informazioni</span> <span class="btn-pos">(sotto il mirino)</span> — mostra le note sulla fonte dati dell'area visualizzata.</div>
+  <div class="btn-item"><span class="btn-name">🟢 Stallo più vicino</span> <span class="btn-pos">(in basso, verde)</span> — trova lo stallo riservato più prossimo alla tua posizione.</div>
+  <div class="btn-item"><span class="btn-name">🟠 Cerca parcheggio pubblico</span> <span class="btn-pos">(in basso, arancione)</span> — parcheggi aperti al pubblico nella zona.</div>
+  <div class="btn-item"><span class="btn-name">❗ Aggiungi stallo mancante</span> — apre StreetComplete per segnalare uno stallo non presente sulla mappa.</div>
+</div>
+
+<div class="btn-section">
+  <h3>Opzioni quando selezioni uno stallo</h3>
+  <p style="font-size:.9rem;color:#555;margin-bottom:.6rem">Toccando un marker si apre un pannello con tre opzioni:</p>
+  <div class="btn-item"><span class="btn-name">Naviga con Google Maps</span> <span class="btn-pos">(verde)</span> — navigazione turn-by-turn verso lo stallo selezionato.</div>
+  <div class="btn-item"><span class="btn-name">Salva posizione auto</span> — salva le coordinate per ritrovare l'auto.</div>
+  <div class="btn-item"><span class="btn-name">Segnala infrazione · PREMIUM</span> — apre il flusso di segnalazione infrazione.</div>
+</div>
+
+<div class="btn-section">
+  <h3>Flusso segnalazione infrazione (Premium)</h3>
+  <div class="btn-item"><span class="btn-name">📷 Scatta foto</span> — fotocamera dell'app per documentare la situazione. La foto è obbligatoria.</div>
+  <blockquote style="margin:.6rem 0 .8rem;font-size:.85rem">Non è necessario fotografare il trasgressore — anzi è sconsigliabile, per non incorrere in contestazioni sulla privacy. È sufficiente documentare il veicolo e la targa. La sanzione amministrativa viene notificata al proprietario del veicolo; per quanto riguarda i punti patente, il trasgressore dovrà comunicare autonomamente i propri dati con un'istanza separata e successiva.</blockquote>
+  <div class="btn-item"><span class="btn-name">Targa veicolo</span> <span class="btn-pos">(opzionale)</span> — aggiungi la targa se visibile.</div>
+  <div class="btn-item"><span class="btn-name">Note aggiuntive</span> <span class="btn-pos">(opzionale)</span> — es. "nessun contrassegno esposto".</div>
+  <p style="font-size:.9rem;color:#555;margin-top:.6rem">La segnalazione viene inviata automaticamente alla Polizia Municipale del Comune in cui ti trovi nel momento esatto dell'invio.</p>
+</div>
+
+<div class="btn-section">
+  <h3>Ricerca per indirizzo (Premium — disponibile a breve)</h3>
+  <p style="font-size:.9rem;color:#555;margin:0">Barra di ricerca in cima alla mappa: digita un indirizzo italiano e la mappa si centra sulla zona. Precisione tipica: 50-80 metri con numero civico.</p>
+</div>
+
+<hr>
+
+<h2>Contatti e link</h2>
+<p class="contact-item"><strong>Canale Telegram</strong> — aggiornamenti e novità → <a href="https://t.me/stallidisabili">t.me/stallidisabili</a></p>
+<p class="contact-item"><strong>Chat per commenti e suggerimenti</strong> → <a href="https://t.me/stallidisabile">t.me/stallidisabile</a></p>
+<p class="contact-item"><strong>Pagina Facebook</strong> → <a href="https://www.facebook.com/parcheggidisabili/">facebook.com/parcheggidisabili</a></p>
+<p class="contact-item"><strong>Video tutorial</strong> → <a href="https://www.youtube.com/@massiminobellavita">youtube.com/@massiminobellavita</a></p>
+<p class="contact-item"><strong>Recensioni su Google Play</strong> — anche una riga aiuta l'app a essere trovata da chi ne ha bisogno</p>
+
+<hr>
+
+<div class="footer">
+  <p>Se sei arrivato fino in fondo, grazie. Per uno sviluppatore solitario significa molto.</p>
+  <p>— Massimino Bellavita</p>
+  <p style="margin-top:.4rem;font-size:.78rem;color:#bbb">Ultimo aggiornamento: agosto 2026</p>
+</div>
+
+</body>
+</html>
