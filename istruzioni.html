@@ -109,13 +109,13 @@
 <p class="bullet"><strong>Navigazione integrata</strong> — seleziona uno stallo e avvia Google Maps con il percorso verso di esso</p>
 <p class="bullet"><strong>Cerca parcheggio pubblico</strong> — se gli stalli riservati nelle vicinanze sono tutti occupati, il pulsante arancione mostra i parcheggi pubblici disponibili nell'area</p>
 <p class="bullet"><strong>Salva posizione auto</strong> — dopo aver parcheggiato, salva il punto esatto per ritrovare l'auto facilmente in seguito</p>
-<p class="bullet"><strong>Aggiungi uno stallo mancante</strong> — se noti uno stallo non presente sulla mappa, il pulsante <strong>!</strong> apre StreetComplete, l'app collaborativa di OpenStreetMap. Gli stalli aggiunti lì entrano automaticamente in Insuperabile al successivo aggiornamento</p>
+<p class="bullet"><strong>Ricerca per indirizzo</strong> <em>(disponibile a breve)</em> — cerca stalli vicino a un indirizzo specifico, non solo vicino a dove sei</p>
+<p class="bullet"><strong>Aggiungi uno stallo mancante</strong> — dal pannello Informazioni, il pulsante dedicato apre StreetComplete, l'app collaborativa di OpenStreetMap. Gli stalli aggiunti lì entrano automaticamente in Insuperabile al successivo aggiornamento</p>
 
 <div class="premium-box">
   <div class="badge">Funzioni Premium — €2,99 una tantum</div>
   <p>Un singolo acquisto senza abbonamento sblocca tutte le funzioni avanzate, presenti e future:</p>
   <p class="bullet"><strong>Segnalazione infrazione</strong> — se trovi uno stallo occupato abusivamente, scatta una foto dall'app, aggiungi opzionalmente la targa e una nota: la segnalazione viene inviata automaticamente via email alla Polizia Municipale del Comune in cui ti trovi nel momento esatto della segnalazione — non alla tua PM di residenza. Nessun modulo da compilare, nessun numero da cercare</p>
-  <p class="bullet"><strong>Ricerca per indirizzo</strong> <em>(disponibile a breve)</em> — cerca stalli vicino a un indirizzo specifico, non solo vicino a dove sei</p>
   <p class="bullet"><strong>Avvisi ZTL</strong> <em>(in sviluppo)</em> — segnalazione delle Zone a Traffico Limitato nelle città coperte, integrata nella mappa degli stalli</p>
 </div>
 
@@ -133,21 +133,21 @@
 
 <hr>
 
-<h2>I dati: da dove vengono e come leggerli</h2>
-<p>I dati degli stalli hanno due origini, riconoscibili a colpo d'occhio dal colore del marker:</p>
+<h2>I dati: come leggere i marker</h2>
+<p>Il colore del marker indica lo <strong>stato di verifica</strong> dello stallo — non la fonte del dato. Sia i Comuni sia la community di OpenStreetMap possono fornire dati verificati:</p>
 
 <div class="marker-grid">
-  <div class="marker-card marker-verde"><strong>Marker verde</strong><br>Dato verificato da un dataset comunale ufficiale. Il Comune ha fornito direttamente la posizione tramite accesso civico. Massima affidabilità.</div>
-  <div class="marker-card marker-ambra"><strong>Marker ambra</strong><br>Dato proveniente da OpenStreetMap, la mappa collaborativa mondiale. Affidabile nella pratica, non verificato formalmente da fonte istituzionale.</div>
+  <div class="marker-card marker-verde"><strong>Marker verde — Stallo verificato</strong><br>Il dato è stato controllato: o proviene da un dataset comunale ufficiale (accesso civico), o un utente OpenStreetMap ha confermato di persona la presenza dello stallo con un sopralluogo recente.</div>
+  <div class="marker-card marker-ambra"><strong>Marker ambra — Stallo da confermare</strong><br>Il dato esiste su OpenStreetMap ma non risulta ancora verificato sul posto di recente. Potrebbe essere corretto, spostato, o non più presente.</div>
 </div>
 
-<p>Entrambi i tipi di marker sono utili e accurati nella pratica. La distinzione ti aiuta a valutare il grado di certezza.</p>
+<p>Il numero sul segnalino, quando presente, indica quanti stalli riservati ci sono in quel punto — è un'informazione indipendente dal colore: uno stallo verificato può non avere il numero specificato, e viceversa.</p>
 
 <hr>
 
 <h2>Città coperte</h2>
-<p>I dati ufficiali comunali coprono oggi <strong>19 città</strong> per un totale di <strong>oltre 23.500 stalli verificati</strong>:</p>
-<p class="city-list">Bergamo · Bologna · Cagliari · Cesena · Chieri · Firenze · Genova · Lecce · Livorno · Milano · Modena · Pavia · Pisa · Prato · Reggio Emilia · Siena · Torino · Trento · Verona</p>
+<p>I dati ufficiali comunali stanno per estendersi a <strong>26 città ed aree metropolitane</strong> per un totale di <strong>oltre 27.000 stalli verificati</strong> <em>(disponibile a breve)</em>:</p>
+<p class="city-list">Bergamo · Bologna · Cagliari · Catania · Cesena · Chieri · Cuneo · Firenze · Gallarate · Genova · Giugliano di Campania · Lecce · Livorno · Milano · Modena · Pavia · Pisa · Prato · Reggio Emilia · Rimini · Saronno · Siena · Torino · Trento · Verona · Vimercate</p>
 <p><em>Stiamo continuando a richiedere dati ai Comuni. Ogni nuova città con dataset ufficiale viene aggiunta agli aggiornamenti periodici.</em></p>
 
 <hr>
@@ -164,23 +164,23 @@
 <h2>Domande frequenti</h2>
 
 <div class="faq-item">
-  <p class="faq-q">Perché vedo stalli in una città non nella lista delle 19?</p>
-  <p class="faq-a">Le 19 città hanno dati ufficiali comunali. Per tutte le altre, l'app mostra comunque gli stalli presenti su OpenStreetMap. La differenza è nella fonte e nel livello di verifica, non nella presenza degli stalli.</p>
+  <p class="faq-q">Perché vedo stalli in una città non nella lista delle 26?</p>
+  <p class="faq-a">Le 26 città elencate sopra hanno dati ufficiali comunali. Per tutte le altre, l'app mostra comunque gli stalli presenti su OpenStreetMap. La differenza è nella fonte e nel livello di verifica, non nella presenza degli stalli.</p>
 </div>
 <div class="faq-item">
   <p class="faq-q">Cosa significa il marker ambra?</p>
-  <p class="faq-a">Dato OpenStreetMap — affidabile nella pratica ma non verificato ufficialmente da un Comune. Se lo trovi errato, il pulsante <strong>!</strong> ti permette di segnalarlo e correggerlo.</p>
+  <p class="faq-a">Lo stallo esiste su OpenStreetMap ma non risulta verificato sul posto di recente — indipendentemente dal fatto che sia un dato comunale o OSM. Se lo trovi errato, dal pannello Informazioni puoi aprire StreetComplete per segnalarlo e correggerlo.</p>
 </div>
 <div class="faq-item">
   <p class="faq-q">L'app funziona senza internet?</p>
-  <p class="faq-a">Per le 19 città del bundle sì — i dati sono inclusi nell'app e non richiedono connessione. Per le altre città serve la connessione.</p>
+  <p class="faq-a">Per le 26 città del bundle sì — i dati sono inclusi nell'app e non richiedono connessione. Per le altre città serve la connessione.</p>
 </div>
 <div class="faq-item">
   <p class="faq-q">Come aggiungo uno stallo mancante?</p>
-  <p class="faq-a">Tocca il pulsante <strong>!</strong> sulla mappa, seleziona "Aggiungi stallo mancante": si apre StreetComplete, l'app più semplice per contribuire a OpenStreetMap. Lo stallo che aggiungi lì compare in Insuperabile all'aggiornamento successivo.</p>
+  <p class="faq-a">Apri il pannello Informazioni (icona <strong>i</strong>) e tocca "Aggiungi stallo mancante": si apre StreetComplete, l'app più semplice per contribuire a OpenStreetMap. Lo stallo che aggiungi lì compare in Insuperabile all'aggiornamento successivo.</p>
 </div>
 <div class="faq-item">
-  <p class="faq-q">La ricerca per indirizzo è precisa? (Premium)</p>
+  <p class="faq-q">La ricerca per indirizzo è precisa?</p>
   <p class="faq-a">Generalmente buona, ma può variare di 50-80 metri se l'edificio non è mappato singolarmente in OpenStreetMap. Sufficiente per centrare la mappa nella zona giusta.</p>
 </div>
 <div class="faq-item">
@@ -195,7 +195,7 @@
 <hr>
 
 <h2>Cosa arriverà</h2>
-<p class="bullet"><strong>Parcheggi preferiti</strong> — salva localmente gli stalli che usi più spesso per trovarli senza cercare ogni volta. Funzione gratuita, in sviluppo</p>
+<p class="city-list">Avviso ZTL · Home · Parcheggi preferiti</p>
 
 <hr>
 
@@ -222,10 +222,17 @@
 <div class="btn-section">
   <h3>Pulsanti sulla mappa principale</h3>
   <div class="btn-item"><span class="btn-name">🎯 Mirino</span> <span class="btn-pos">(in alto a destra, verde scuro)</span> — ricentra la mappa sulla tua posizione attuale.</div>
-  <div class="btn-item"><span class="btn-name">ℹ️ Informazioni</span> <span class="btn-pos">(sotto il mirino)</span> — mostra le note sulla fonte dati dell'area visualizzata.</div>
+  <div class="btn-item"><span class="btn-name">ℹ️ Informazioni</span> <span class="btn-pos">(sotto il mirino)</span> — apre il pannello con legenda mappa, funzioni premium, link community e strumenti di contribuzione.</div>
   <div class="btn-item"><span class="btn-name">🟢 Stallo più vicino</span> <span class="btn-pos">(in basso, verde)</span> — trova lo stallo riservato più prossimo alla tua posizione.</div>
   <div class="btn-item"><span class="btn-name">🟠 Cerca parcheggio pubblico</span> <span class="btn-pos">(in basso, arancione)</span> — parcheggi aperti al pubblico nella zona.</div>
-  <div class="btn-item"><span class="btn-name">❗ Aggiungi stallo mancante</span> — apre StreetComplete per segnalare uno stallo non presente sulla mappa.</div>
+</div>
+
+<div class="btn-section">
+  <h3>Nel pannello Informazioni</h3>
+  <div class="btn-item"><span class="btn-name">Legenda mappa</span> — spiegazione dei colori e dei numeri sui marker.</div>
+  <div class="btn-item"><span class="btn-name">❗ Aggiungi stallo mancante</span> — apre StreetComplete, l'app collaborativa di OpenStreetMap, per segnalare uno stallo non presente sulla mappa.</div>
+  <div class="btn-item"><span class="btn-name">Canale Telegram e community</span> — link diretti al canale e al gruppo di discussione.</div>
+  <div class="btn-item"><span class="btn-name">Privacy Policy e Guida completa</span> — link a questo documento e all'informativa privacy.</div>
 </div>
 
 <div class="btn-section">
@@ -246,8 +253,8 @@
 </div>
 
 <div class="btn-section">
-  <h3>Ricerca per indirizzo (Premium — disponibile a breve)</h3>
-  <p style="font-size:.9rem;color:#555;margin:0">Barra di ricerca in cima alla mappa: digita un indirizzo italiano e la mappa si centra sulla zona. Precisione tipica: 50-80 metri con numero civico.</p>
+  <h3>Ricerca per indirizzo (disponibile a breve)</h3>
+  <p style="font-size:.9rem;color:#555;margin:0">Barra di ricerca in cima alla mappa: digita un indirizzo italiano e la mappa si centra sulla zona. Precisione tipica: 50-80 metri con numero civico. Funzione gratuita.</p>
 </div>
 
 <hr>
