@@ -92,6 +92,8 @@
 
 <a class="cta-button" href="https://play.google.com/store/apps/details?id=com.maximoon.insuperabile">📲 Scarica su Google Play</a>
 
+<blockquote><strong>Nota sui numeri e sulla versione.</strong> I comuni e gli stalli presenti nell'app crescono di continuo: ogni aggiornamento ne aggiunge di nuovi. Questa guida non viene aggiornata nello stesso momento in cui esce una nuova versione su Google Play, quindi i numeri e alcune funzioni descritti qui possono essere in ritardo, o in anticipo, rispetto alla versione che hai installato. Ultimo aggiornamento di questa guida: 29 ottobre 2026.</blockquote>
+
 <p class="legal-note">Il dataset di Insuperabile costituisce una banca dati tutelata ai sensi degli artt. 102-bis e ss. della Legge 633/1941. Sono vietati l'estrazione e il reimpiego, anche parziali, non autorizzati dal costitutore. Ogni versione del dataset è tracciata cronologicamente e la sua paternità è documentabile in ogni momento; l'uso non autorizzato è perseguibile ai sensi di legge.</p>
 
 <hr>
@@ -137,7 +139,7 @@
 <p>Il colore del marker indica lo <strong>stato di verifica</strong> dello stallo — non la fonte del dato. Sia i Comuni sia la community di OpenStreetMap possono fornire dati verificati:</p>
 
 <div class="marker-grid">
-  <div class="marker-card marker-verde"><strong>Marker verde — Stallo verificato</strong><br>Il dato è stato controllato: o proviene da un dataset comunale ufficiale (accesso civico), o un utente OpenStreetMap ha confermato di persona la presenza dello stallo con un sopralluogo recente.</div>
+  <div class="marker-card marker-verde"><strong>Marker verde — Stallo verificato</strong><br>Il dato proviene da un elenco ufficiale fornito da un Comune (accesso civico o dati aperti), oppure un utente OpenStreetMap ha confermato di persona la presenza dello stallo con un sopralluogo recente. Gli elenchi dei Comuni non sono stati controllati da noi sul posto: vedi «Da dove vengono i dati e quali sono i limiti».</div>
   <div class="marker-card marker-ambra"><strong>Marker ambra — Stallo da confermare</strong><br>Il dato esiste su OpenStreetMap ma non risulta ancora verificato sul posto di recente. Potrebbe essere corretto, spostato, o non più presente.</div>
 </div>
 
@@ -146,9 +148,17 @@
 <hr>
 
 <h2>Città coperte</h2>
-<p>I dati ufficiali comunali stanno per estendersi a <strong>26 città ed aree metropolitane</strong> per un totale di <strong>oltre 27.000 stalli verificati</strong> <em>(disponibile a breve)</em>:</p>
-<p class="city-list">Bergamo · Bologna · Cagliari · Catania · Cesena · Chieri · Cuneo · Firenze · Gallarate · Genova · Giugliano di Campania · Lecce · Livorno · Milano · Modena · Pavia · Pisa · Prato · Reggio Emilia · Rimini · Saronno · Siena · Torino · Trento · Verona · Vimercate</p>
+<p>Nella versione attualmente pubblicata su Google Play (situazione al 29 ottobre 2026) i dati ufficiali comunali riguardano <strong>31 città ed aree metropolitane</strong>, per un totale di <strong>oltre 29.000 stalli</strong>:</p>
+<p class="city-list">Bergamo · Bologna · Busto Arsizio · Cagliari · Catania · Cesena · Chieri · Cuneo · Firenze · Gallarate · Genova · Giugliano di Campania · Lecce · Livorno · Milano · Modena · Orbassano · Pavia · Perugia · Piacenza · Pisa · Prato · Reggio Emilia · Rho · Rimini · Saronno · Siena · Torino · Trento · Verona · Vimercate</p>
+<p>Con il prossimo aggiornamento si aggiungeranno altri comuni, per arrivare a circa 50. La data di uscita non è ancora definita.</p>
 <p><em>Stiamo continuando a richiedere dati ai Comuni. Ogni nuova città con dataset ufficiale viene aggiunta agli aggiornamenti periodici.</em></p>
+
+<hr>
+
+<h2>Da dove vengono i dati e quali sono i limiti</h2>
+<p>Gli stalli arrivano da due fonti: OpenStreetMap, la mappa collaborativa, e gli elenchi che i Comuni hanno fornito, in gran parte in risposta a richieste di accesso civico o pubblicati come dati aperti.</p>
+<p>Non abbiamo verificato ogni stallo sul posto. Gli elenchi dei Comuni possono essere parziali, cioè coprire solo una parte della città, e non sempre aggiornati. In alcuni casi l'elenco ricevuto indica la zona ma non l'indirizzo preciso: la posizione sulla mappa può essere approssimata e «Stallo più vicino» potrebbe portarti al centro della zona invece che davanti allo stallo. Dove mancavano le coordinate, sono state ricavate dagli indirizzi con servizi di geocodifica, quindi possono scostarsi dalla posizione reale.</p>
+<p>Per questo, sul posto, controlla sempre la segnaletica. Se trovi un errore o uno stallo mancante puoi segnalarlo dal pannello Informazioni (StreetComplete) o scrivere nella chat per commenti e suggerimenti indicata in fondo a questa guida.</p>
 
 <hr>
 
@@ -164,8 +174,8 @@
 <h2>Domande frequenti</h2>
 
 <div class="faq-item">
-  <p class="faq-q">Perché vedo stalli in una città non nella lista delle 26?</p>
-  <p class="faq-a">Le 26 città elencate sopra hanno dati ufficiali comunali. Per tutte le altre, l'app mostra comunque gli stalli presenti su OpenStreetMap. La differenza è nella fonte e nel livello di verifica, non nella presenza degli stalli.</p>
+  <p class="faq-q">Perché vedo stalli in una città che non è nella lista?</p>
+  <p class="faq-a">Le città elencate sopra hanno dati ufficiali comunali. Per tutte le altre, l'app mostra comunque gli stalli presenti su OpenStreetMap. La differenza è nella fonte e nel livello di verifica, non nella presenza degli stalli.</p>
 </div>
 <div class="faq-item">
   <p class="faq-q">Cosa significa il marker ambra?</p>
@@ -173,7 +183,7 @@
 </div>
 <div class="faq-item">
   <p class="faq-q">L'app funziona senza internet?</p>
-  <p class="faq-a">Per le 26 città del bundle sì — i dati sono inclusi nell'app e non richiedono connessione. Per le altre città serve la connessione.</p>
+  <p class="faq-a">Per le città con dati comunali elencate sopra sì — i dati sono inclusi nell'app e non richiedono connessione. Per le altre città serve la connessione.</p>
 </div>
 <div class="faq-item">
   <p class="faq-q">Come aggiungo uno stallo mancante?</p>
@@ -271,7 +281,7 @@
 <div class="footer">
   <p>Se sei arrivato fino in fondo, grazie. Per uno sviluppatore solitario significa molto.</p>
   <p>— Massimino Bellavita</p>
-  <p style="margin-top:.4rem;font-size:.78rem;color:#bbb">Ultimo aggiornamento: agosto 2026</p>
+  <p style="margin-top:.4rem;font-size:.78rem;color:#bbb">Ultimo aggiornamento: 29 ottobre 2026</p>
 </div>
 
 </body>
