@@ -103,7 +103,7 @@
 
 <div class="container">
 
-    <p class="update-date">Ultimo aggiornamento: 28 agosto 2026</p>
+    <p class="update-date">Ultimo aggiornamento: 5 novembre 2026</p>
 
     <div class="highlight">
         Insuperabile è sviluppata da <strong>Massimino Bellavita</strong> (sviluppatore indipendente). La tua privacy è importante: questa app raccoglie solo i dati strettamente necessari al suo funzionamento e non vende né condivide dati personali con terze parti a fini commerciali.
@@ -112,7 +112,7 @@
     <h2>1. Dati raccolti e finalità</h2>
 
     <p><strong>Posizione geografica (GPS)</strong> <span class="badge">necessario</span></p>
-    <p>L'app accede alla tua posizione per mostrarti gli stalli riservati nelle vicinanze, calcolare la distanza dallo stallo più vicino e permetterti di salvare la posizione del tuo veicolo. La posizione non viene mai trasmessa a server esterni durante il normale utilizzo (visualizzazione mappa, navigazione, calcolo distanze). Viene elaborata esclusivamente sul tuo dispositivo e, per la funzione "Salva auto", salvata localmente nelle preferenze dell'app. Fa eccezione la funzione di segnalazione infrazione descritta più sotto: solo se scegli attivamente di usarla, la posizione del punto segnalato — insieme al comune e ad alcuni metadati della segnalazione — viene salvata su Firebase Firestore.</p>
+    <p>L'app accede alla tua posizione per mostrarti gli stalli riservati nelle vicinanze, calcolare la distanza dallo stallo più vicino e permetterti di salvare la posizione del tuo veicolo. La posizione non viene mai trasmessa a server esterni durante il normale utilizzo (visualizzazione mappa, navigazione, calcolo distanze). Viene elaborata esclusivamente sul tuo dispositivo e, per la funzione "Salva auto", salvata localmente nelle preferenze dell'app. Fanno eccezione due funzioni, descritte più sotto: (a) la ricerca di un indirizzo, che invia a Nominatim (OpenStreetMap) il testo da te digitato; (b) la funzione di segnalazione infrazione (Premium): all'apertura del modulo di segnalazione le coordinate della tua posizione vengono inviate a Nominatim per individuare il comune e l'email della Polizia Municipale e, solo se scegli di inviare la segnalazione, la posizione del punto segnalato — insieme al comune e ad alcuni metadati della segnalazione — viene salvata su Firebase Firestore.</p>
 
     <p><strong>Fotocamera</strong> <span class="badge">solo premium</span></p>
     <p>La funzione di segnalazione infrazione (disponibile con il piano Premium) richiede l'accesso alla fotocamera per scattare foto del veicolo in sosta irregolare. Le foto vengono allegate direttamente all'email di segnalazione e non vengono mai caricate su server dell'app né archiviate al di fuori del tuo dispositivo.</p>
@@ -142,7 +142,7 @@
         <li><strong>Firebase (Google)</strong> — per autenticazione anonima e per la memorizzazione dei metadati delle segnalazioni di infrazione (funzione Premium). Si applica la <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy di Firebase</a>.</li>
         <li><strong>OpenStreetMap / Overpass API</strong> — per il recupero dei dati sugli stalli. Le query contengono solo le coordinate del bounding box della mappa visualizzata, senza dati personali.</li>
         <li><strong>Google Play Billing</strong> — per la gestione degli acquisti in-app (piano Premium). Si applica la Privacy Policy di Google Play.</li>
-        <li><strong>Nominatim (OpenStreetMap)</strong> — per la geocodifica inversa necessaria a trovare l'email della Polizia Municipale locale al momento della segnalazione. La richiesta contiene solo le coordinate geografiche.</li>
+        <li><strong>Nominatim (OpenStreetMap)</strong> — usato per due funzioni. (1) Ricerca di un indirizzo: il testo che digiti nella barra di ricerca viene inviato a Nominatim per ottenere le coordinate del luogo. (2) Geocodifica inversa: quando apri il modulo di segnalazione infrazione (funzione Premium), le coordinate della tua posizione vengono inviate a Nominatim per individuare il comune e quindi l'email della Polizia Municipale locale. Come in qualsiasi richiesta web, il servizio riceve anche il tuo indirizzo IP e il nome dell'app (user agent). L'app non invia altri dati a questo servizio.</li>
     </ul>
 
     <h2>4. Acquisti in-app</h2>
@@ -167,6 +167,7 @@
 
     <h2>8. Modifiche alla privacy policy</h2>
     <p>Eventuali modifiche a questa policy verranno comunicate tramite aggiornamento dell'app su Google Play. La data di "Ultimo aggiornamento" in cima alla pagina riflette sempre la versione più recente.</p>
+    <p>Versione 1.3 (5 novembre 2026): descritto l'uso di Nominatim (OpenStreetMap) per la ricerca di indirizzi e per la geocodifica inversa.</p>
 
     <h2>9. Proprietà intellettuale e tutela del dataset</h2>
     <div class="highlight">
@@ -181,7 +182,7 @@
     </p>
 
     <footer>
-        <p>Insuperabile · Privacy Policy · versione 1.2 · 28 agosto 2026</p>
+        <p>Insuperabile · Privacy Policy · versione 1.3 · 5 novembre 2026</p>
         <p style="margin-top:0.4rem">Questa policy è conforme al GDPR (UE) 2016/679 e al D.Lgs. 196/2003 (Codice Privacy italiano).</p>
     </footer>
 
