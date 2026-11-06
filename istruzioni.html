@@ -86,13 +86,13 @@
 <p class="byline">Massimino Bellavita, sviluppatore indipendente</p>
 <hr>
 
-<p>In Italia non esisteva nessuna app dedicata a mappare gli stalli di parcheggio riservati ai titolari di contrassegno CUDE. Nessuna mappa aggiornata, nessun riferimento unico, nessuno strumento pratico. Ho scritto, risposto e discusso con oltre 250 Comuni italiani su 7.904, chiedendo i dati ufficiali, ho aspettato mesi, ho convertito formati improbabili — e ho costruito Insuperabile.</p>
+<p>Quando ho iniziato, per quanto ne so, in Italia non esisteva un'app con una mappa nazionale degli stalli riservati ai titolari di contrassegno CUDE basata sugli elenchi ufficiali dei Comuni. Quegli elenchi erano sparsi tra i singoli Comuni, in formati diversi, e spesso non consultabili su una mappa. Per questo ho chiesto i dati ufficiali a numerosi Comuni italiani, ho aspettato mesi, ho convertito formati improbabili — e ho costruito Insuperabile.</p>
 
 <p>È un'app Android gratuita. Questo documento spiega come funziona, cosa può e cosa non può fare, e dove sta andando.</p>
 
 <a class="cta-button" href="https://play.google.com/store/apps/details?id=com.maximoon.insuperabile">📲 Scarica su Google Play</a>
 
-<blockquote><strong>Nota sui numeri e sulla versione.</strong> I comuni e gli stalli presenti nell'app crescono di continuo: ogni aggiornamento ne aggiunge di nuovi. Questa guida non viene aggiornata nello stesso momento in cui esce una nuova versione su Google Play, quindi i numeri e alcune funzioni descritti qui possono essere in ritardo, o in anticipo, rispetto alla versione che hai installato. Ultimo aggiornamento di questa guida: 29 ottobre 2026.</blockquote>
+<blockquote><strong>Nota sui numeri e sulla versione.</strong> I comuni e gli stalli presenti nell'app crescono di continuo: ogni aggiornamento ne aggiunge di nuovi. Questa guida non viene aggiornata nello stesso momento in cui esce una nuova versione su Google Play, quindi i numeri e alcune funzioni descritti qui possono essere in ritardo, o in anticipo, rispetto alla versione che hai installato. Ultimo aggiornamento di questa guida: 6 novembre 2026.</blockquote>
 
 <p class="legal-note">Il dataset di Insuperabile costituisce una banca dati tutelata ai sensi degli artt. 102-bis e ss. della Legge 633/1941. Sono vietati l'estrazione e il reimpiego, anche parziali, non autorizzati dal costitutore. Ogni versione del dataset è tracciata cronologicamente e la sua paternità è documentabile in ogni momento; l'uso non autorizzato è perseguibile ai sensi di legge.</p>
 
@@ -111,14 +111,14 @@
 <p class="bullet"><strong>Navigazione integrata</strong> — seleziona uno stallo e avvia Google Maps con il percorso verso di esso</p>
 <p class="bullet"><strong>Cerca parcheggio pubblico</strong> — se gli stalli riservati nelle vicinanze sono tutti occupati, il pulsante arancione mostra i parcheggi pubblici disponibili nell'area</p>
 <p class="bullet"><strong>Salva posizione auto</strong> — dopo aver parcheggiato, salva il punto esatto per ritrovare l'auto facilmente in seguito</p>
-<p class="bullet"><strong>Ricerca per indirizzo</strong> <em>(disponibile a breve)</em> — cerca stalli vicino a un indirizzo specifico, non solo vicino a dove sei</p>
+<p class="bullet"><strong>Ricerca per indirizzo o città</strong> — scrivi un indirizzo o il nome di una città e la mappa si sposta lì: cerchi stalli vicino a una destinazione, non solo vicino a dove sei. Richiede la connessione.</p>
 <p class="bullet"><strong>Aggiungi uno stallo mancante</strong> — dal pannello Informazioni, il pulsante dedicato apre StreetComplete, l'app collaborativa di OpenStreetMap. Gli stalli aggiunti lì entrano automaticamente in Insuperabile al successivo aggiornamento</p>
 
 <div class="premium-box">
   <div class="badge">Funzioni Premium — €2,99 una tantum</div>
   <p>Un singolo acquisto senza abbonamento sblocca tutte le funzioni avanzate, presenti e future:</p>
   <p class="bullet"><strong>Segnalazione infrazione</strong> — se trovi uno stallo occupato abusivamente, scatta una foto dall'app, aggiungi opzionalmente la targa e una nota: la segnalazione viene inviata automaticamente via email alla Polizia Municipale del Comune in cui ti trovi nel momento esatto della segnalazione — non alla tua PM di residenza. Nessun modulo da compilare, nessun numero da cercare</p>
-  <p class="bullet"><strong>Avvisi ZTL</strong> <em>(in sviluppo)</em> — segnalazione delle Zone a Traffico Limitato nelle città coperte, integrata nella mappa degli stalli</p>
+  <p class="bullet"><strong>Verifica ZTL/CUDE</strong> — cerca un comune e vedi se risulta tra gli aderenti alla piattaforma CUDE e da quando (elenco del Portale dell'Automobilista). L'adesione non garantisce che i varchi siano collegati: controlla sempre il sito del Comune e la segnaletica.</p>
 </div>
 
 <hr>
@@ -139,7 +139,7 @@
 <p>Il colore del marker indica lo <strong>stato di verifica</strong> dello stallo — non la fonte del dato. Sia i Comuni sia la community di OpenStreetMap possono fornire dati verificati:</p>
 
 <div class="marker-grid">
-  <div class="marker-card marker-verde"><strong>Marker verde — Stallo verificato</strong><br>Il dato proviene da un elenco ufficiale fornito da un Comune (accesso civico o dati aperti), oppure un utente OpenStreetMap ha confermato di persona la presenza dello stallo con un sopralluogo recente. Gli elenchi dei Comuni non sono stati controllati da noi sul posto: vedi «Da dove vengono i dati e quali sono i limiti».</div>
+  <div class="marker-card marker-verde"><strong>Marker verde — Stallo da fonte ufficiale o confermato</strong><br>Il dato proviene da un elenco ufficiale fornito da un Comune (accesso civico o dati aperti), oppure un utente OpenStreetMap ha confermato di persona la presenza dello stallo con un sopralluogo recente. Gli elenchi dei Comuni non sono stati controllati da noi sul posto: vedi «Da dove vengono i dati e quali sono i limiti».</div>
   <div class="marker-card marker-ambra"><strong>Marker ambra — Stallo da confermare</strong><br>Il dato esiste su OpenStreetMap ma non risulta ancora verificato sul posto di recente. Potrebbe essere corretto, spostato, o non più presente.</div>
 </div>
 
@@ -148,9 +148,9 @@
 <hr>
 
 <h2>Città coperte</h2>
-<p>Nella versione attualmente pubblicata su Google Play (situazione al 29 ottobre 2026) i dati ufficiali comunali riguardano <strong>31 città ed aree metropolitane</strong>, per un totale di <strong>oltre 29.000 stalli</strong>:</p>
-<p class="city-list">Bergamo · Bologna · Busto Arsizio · Cagliari · Catania · Cesena · Chieri · Cuneo · Firenze · Gallarate · Genova · Giugliano di Campania · Lecce · Livorno · Milano · Modena · Orbassano · Pavia · Perugia · Piacenza · Pisa · Prato · Reggio Emilia · Rho · Rimini · Saronno · Siena · Torino · Trento · Verona · Vimercate</p>
-<p>Con il prossimo aggiornamento si aggiungeranno altri comuni, per arrivare a circa 50. La data di uscita non è ancora definita.</p>
+<p>Nella versione 1.6.0 (situazione al 6 novembre 2026) i dati ufficiali comunali riguardano <strong>50 comuni</strong>, per un totale di <strong>oltre 30.000 parcheggi riservati</strong>:</p>
+<p class="city-list">Bergamo · Berlingo · Bianzano · Bologna · Brusaporto · Busto Arsizio · Cagliari · Catania · Cavernago · Cenate Sotto · Cesena · Chieri · Concesio · Cremona · Cuneo · Firenze · Gallarate · Genova · Giugliano di Campania · Lecce · Lissone · Livorno · Manerbio · Milano · Modena · Montirone · Napoli · Orbassano · Pavia · Perugia · Pezzaze · Piacenza · Pisa · Prato · Ranzanico · Reggio Emilia · Rho · Rimini · Rozzano · Rudiano · San Donato Milanese · Saronno · Segrate · Siena · Spinone al Lago · Torino · Torre de' Roveri · Trento · Verona · Vimercate</p>
+<p>I dati non hanno tutti la stessa completezza. Per Napoli l'elenco riguarda solo la viabilità principale; per Concesio, Rudiano, Pezzaze, Montirone e Manerbio l'elenco ricevuto contiene un solo punto per comune, senza indirizzi.</p>
 <p><em>Stiamo continuando a richiedere dati ai Comuni. Ogni nuova città con dataset ufficiale viene aggiunta agli aggiornamenti periodici.</em></p>
 
 <hr>
@@ -205,7 +205,7 @@
 <hr>
 
 <h2>Cosa arriverà</h2>
-<p class="city-list">Avviso ZTL · Home · Parcheggi preferiti</p>
+<p class="city-list">Home · Parcheggi preferiti · Altri comuni</p>
 
 <hr>
 
@@ -217,9 +217,9 @@
 <hr>
 
 <h2>Privacy</h2>
-<p>L'app non raccoglie dati personali durante l'uso base. La geolocalizzazione viene usata solo dal tuo telefono per centrare la mappa — non viene mai trasmessa ai server dell'app.</p>
+<p>L'app non richiede registrazione: non ti chiede nome, email o password.</p>
+<p>Per funzionare usa la tua posizione, per centrare la mappa e trovare gli stalli vicini, e il testo che scrivi nella ricerca. Per mostrarti le mappe, i parcheggi della zona e i risultati delle ricerche, l'app si collega a servizi di terzi, come Google Maps e OpenStreetMap, che ricevono le richieste necessarie (per esempio l'area di mappa o l'indirizzo cercato). Quali dati sono coinvolti e perché è spiegato nell'informativa sulla privacy, collegata qui sotto.</p>
 <p>Fa eccezione la funzione premium di <strong>segnalazione infrazione</strong>: quando la usi volontariamente, la foto e la posizione dello stallo vengono trasmesse alla Polizia Municipale — è lo scopo stesso della funzione.</p>
-<p>Le uniche informazioni tracciate in modo anonimo sono i conteggi di Firebase Analytics: quanti utenti aprono l'app e da quali città. Nessun dato personale, nessuna profilazione.</p>
 <p>Nessuna pubblicità. Nessuna vendita di dati.</p>
 <p><a href="https://maximoon.github.io/insuperabile-privacy/privacy_policy_insuperabile.html">Privacy Policy completa</a></p>
 
@@ -263,8 +263,8 @@
 </div>
 
 <div class="btn-section">
-  <h3>Ricerca per indirizzo (disponibile a breve)</h3>
-  <p style="font-size:.9rem;color:#555;margin:0">Barra di ricerca in cima alla mappa: digita un indirizzo italiano e la mappa si centra sulla zona. Precisione tipica: 50-80 metri con numero civico. Funzione gratuita.</p>
+  <h3>Ricerca per indirizzo o città</h3>
+  <p style="font-size:.9rem;color:#555;margin:0">Barra di ricerca in cima alla mappa: digita un indirizzo italiano o il nome di una città e la mappa si centra sulla zona. Precisione tipica: 50-80 metri con numero civico. Funzione gratuita. Richiede la connessione.</p>
 </div>
 
 <hr>
@@ -281,7 +281,7 @@
 <div class="footer">
   <p>Se sei arrivato fino in fondo, grazie. Per uno sviluppatore solitario significa molto.</p>
   <p>— Massimino Bellavita</p>
-  <p style="margin-top:.4rem;font-size:.78rem;color:#bbb">Ultimo aggiornamento: 29 ottobre 2026</p>
+  <p style="margin-top:.4rem;font-size:.78rem;color:#bbb">Ultimo aggiornamento: 6 novembre 2026</p>
 </div>
 
 </body>
